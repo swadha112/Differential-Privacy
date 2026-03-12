@@ -14,7 +14,7 @@ DATA_PATH = "retail_offer_events_demo.csv"
 APP_SECRET = os.getenv("DP_APP_SECRET", "CHANGE_ME_DEMO_SECRET")
 NOISE_VERSION = "v1"
 
-st.set_page_config(page_title="DP Dashboard Teaching Demo", layout="wide")
+st.set_page_config(page_title="DP Dashboard Demo", layout="wide")
 
 
 @st.cache_data
@@ -233,7 +233,7 @@ max_date = df["event_date"].max()
 
 epsilon = st.sidebar.slider("ε (epsilon)", min_value=0.1, max_value=3.0, value=1.0, step=0.1)
 st.sidebar.markdown("Smaller ε = more noise, stronger privacy.")
-st.sidebar.caption("Demo note: set DP_APP_SECRET in your environment for a real secret.")
+
 
 st.title("Differential Privacy Dashboard Teaching Demo")
 st.write("Compare fresh noise, stable deterministic noise, and atomic time buckets.")
