@@ -235,7 +235,7 @@ epsilon = st.sidebar.slider("ε (epsilon)", min_value=0.1, max_value=3.0, value=
 st.sidebar.markdown("Smaller ε = more noise, stronger privacy.")
 
 
-st.title("Differential Privacy Dashboard Teaching Demo")
+st.title("Differential Privacy Dashboard Demo")
 st.write("Compare fresh noise, stable deterministic noise, and atomic time buckets.")
 
 tabs = st.tabs(
